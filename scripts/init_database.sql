@@ -17,12 +17,14 @@ use master;
 go
 
 -- Drop and create database
-if DB_ID('DataWarehouse') is not null
+IF EXISTS(SELECT * FROM sys.databases WHERE name = 'DataWarehouse')
 begin 
-	drop database DataWarehoue;
+	ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+	drop database DataWarehouse;
+
 end
 
-create database DataWarehouse
+create database DataWarehouse;
 go
 
 
