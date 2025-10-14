@@ -6,6 +6,8 @@ Script purpose:
 	This script creates tables in the 'bronze layer' schema, dropping existing tables
 	if they already exists
 	Run this script to re-define the DLL structure of 'bronze' Tables
+=====================================================
+
 */
 if OBJECT_ID('bronze.account_info', 'U') is not null
 	drop table bronze.account_info
