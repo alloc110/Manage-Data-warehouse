@@ -14,7 +14,7 @@ Parameters:
 This stored procedure does not accecpt any parameters or return any values.
 
 Usage Example:
-	EXEC bronze.load_silver
+	EXEC silver.load_silver
 =====================================================
 
 */
