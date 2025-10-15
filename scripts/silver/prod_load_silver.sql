@@ -3,7 +3,8 @@
 Stored Proceduce: Load silver Layer (Bronze -> Silver)
 =====================================================
 Script purpose:
-	This stored proceduce loads data into the 'silver' schema from 'bronze' schema
+	This stored proceduce loads data into the 'silver' schema from 'bronze' schema.
+	Perform the ETL (Extract, Transform, Load) process to populate the 'silver
 	It performs the following actions:
 		- Truncates the silver tables before loading data.
 		- Uses the 'INSERT INTO' command to load data from bronze schema to silver tables
